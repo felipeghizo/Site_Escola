@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" type="text/css" rel="stylesheet"/> 	
+    <style type="text/css">
+        /* Fundo */
+        div#fundo{
+            background-image: url("../images/escola.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            z-index: 0;
+            top: 100px;
+            
+        }
+    </style>
+    <script>
+        
+        function GoBig(a){
+           
+            var maternal = window.document.getElementById("info-maternal")
+            var pmaternal = window.document.getElementById("info2-mat")    
+
+            var fundamental = window.document.getElementById("info-fundamental")
+            var pfunamental = window.document.getElementById("info2-fund")
+            
+
+            var medio = window.document.getElementById("info-medio")
+            var pmedio = window.document.getElementById("info2-med")
+        
+            var infos = [["info-maternal", maternal, pmaternal], ["info-fundamental", fundamental, pfunamental], ["info-medio", medio, pmedio]]
+        
+
+            for(var i = 0; i != infos.length; i ++){
+               
+                if (infos[i][0] == a){
+                    infos[i][1].style.width = '50%'
+                    infos[i][1].style.height = '50%'
+                    infos[i][2].style.opacity = 1
+                } else {
+                    infos[i][1].style.width = '3%'
+                    infos[i][1].style.height = '2%'
+                    infos[i][1].style.fontsize = '10px'
+                    infos[i][1].style.opacity = 0.7
+                }
+                           
+		    }
+        }
+
+        function GoLow(b){
+
+            var maternal = window.document.getElementById("info-maternal")
+            var pmaternal = window.document.getElementById("info2-mat")    
+
+            var fundamental = window.document.getElementById("info-fundamental")
+            var pfunamental = window.document.getElementById("info2-fund")
+            
+
+            var medio = window.document.getElementById("info-medio")
+            var pmedio = window.document.getElementById("info2-med")
+        
+            var infos = [["info-maternal", maternal, pmaternal], ["info-fundamental", fundamental, pfunamental], ["info-medio", medio, pmedio]]
+        
+
+            for(var i = 0; i != infos.length; i ++){
+                
+                infos[i][1].style.width = '250px'
+                infos[i][1].style.height = '40px'
+                infos[i][1].style.marginLeft = '7%'
+                infos[i][1].style.marginRight = '7%'
+                infos[i][1].style.opacity = 1
+                infos[i][2].style.opacity = 0
+                
+                           
+		    }
+        }
+    </script>
+    <title>ESCOLA</title>
+</head>
+<body>
+    <div id="menu">
+        <div id="options">
+            <input type="button" id="button-menu1" value="Aluno">
+            <input type="button" id="button-menu2" value="Professor">
+            <h1 id="NAME">ZOOTOPIA</h1>
+            <input type="button" id="button-menu3" value="Novidades">
+            <input type="button" id="button-menu4" value="Matricule-se">
+        </div>
+    </div>
+    <div id="fundo"></div>
+    <div id="info">
+        <div id="info-maternal" onmouseenter="GoBig('info-maternal')" onmouseleave="GoLow('info-maternal')">
+            <h2>Maternal</h2>
+            <p id="info2-mat">Lorem Ipsum é simplesmente uma simulação de texto da 
+                indústria tipográfica e de impressos, e vem sendo 
+                utilizado desde o século XVI, quando um impressor 
+                desconhecido pegou uma bandeja de tipos e os embaralhou 
+                para fazer um livro de modelos de tipos.</p>
+        </div>
+        <div id="info-fundamental" onmouseenter="GoBig('info-fundamental')" onmouseleave="GoLow('info-fundamental')">
+            <h2>Fundamental 1 e 2</h2>
+            <p id="info2-fund">Lorem Ipsum é simplesmente uma simulação de texto da 
+            indústria tipográfica e de impressos, e vem sendo 
+            utilizado desde o século XVI, quando um impressor 
+            desconhecido pegou uma bandeja de tipos e os embaralhou 
+            para fazer um livro de modelos de tipos.</p>
+        </div>
+        <div id="info-medio" onmouseenter="GoBig('info-medio')" onmouseleave="GoLow('info-medio')">
+            <h2>Médio</h2>
+            <p id="info2-med">Lorem Ipsum é simplesmente uma simulação de texto da 
+                indústria tipográfica e de impressos, e vem sendo 
+                utilizado desde o século XVI, quando um impressor 
+                desconhecido pegou uma bandeja de tipos e os embaralhou 
+                para fazer um livro de modelos de tipos.</p>
+        </div>
+    </div>
+</body>
+</html>

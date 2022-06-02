@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 200%;
+  
+    color: white;
+}
+
+
+/*Menu*/
+div#menu{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+}
+input#button-menu1, #button-menu2, #button-menu3, #button-menu4{
+    background-color: black;
+
+    border-color: rgb(131, 128, 128);
+    border-width: 1px;
+
+    color: rgb(190, 188, 188);
+    font-size: 18px;
+
+    cursor: pointer;
+
+    margin-top: 2%;
+}
+input#button-menu1:hover, #button-menu2:hover, #button-menu3:hover, #button-menu4:hover{
+    background-color: rgb(51, 51, 51);
+
+}
+input#button-menu1{
+    margin-left: 5%;
+    margin-right: 15%;
+}
+input#button-menu2{
+    margin-right: 15%;
+}
+input#button-menu3, input#button-menu4{
+    float: right;
+}
+input#button-menu3{
+    margin-right: 5%;
+}
+input#button-menu4{
+    margin-right: 15%;
+}
+h1#NAME{
+    position: absolute;
+    margin-left: 42%;
+    margin-top: -2%;
+}
+
+/* info */
+div#info{
+    color: rgb(0, 0, 0);
+    margin-top: 200px;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+}
+div#info>div{
+    height: 40px;
+    width: 250px;
+    
+    margin-left: 7%;
+    margin-right: 7%;
+    padding: 10px;
+    
+    background-color: rgba(68, 68, 68, 0.6);   
+    color: white;
+    
+    text-align: center;
+}
+
+
+/* info maternal */
+div#info-maternal{
+    float: left;
+    margin-right: 10%;
+    transition: width 1s, height 2s;
+}
+div#info-maternal>p{
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+div#info-fundamental{
+    float: left;
+    margin-right: 10%;    
+    transition: width 1s, height 2s;
+}
+div#info-fundamental>p{
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+div#info-medio{
+    float: left;
+    margin-right: 10%;
+    transition: width 1s, height 2s;
+}
+div#info-medio>p{
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+
+/* Caixa de logging */
+div#logging{
+    background-color: rgb(119, 119, 238);
+    width: 40%;
+    height: 30%;
+
+    color: black;
+
+    border: 8px solid black;
+    border-radius: 10px;
+
+    position: absolute;
+}
+div#logging>p{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+div#logging-info{
+    padding: 20px;
+    background-color: white;
+
+    border-top: 2px solid black;
+  
+}
+input#info-box1, input#info-box2{
+    width: 100px;
+    text-align: left;
+    float: right;
+}
+input#info-box2{
+    margin-top: -13px;
+}
+input#button-logging{
+    background-color: rgb(119, 119, 238);
+    border-radius: 30px;
+    font-weight: bold;
+    
+    
+    margin-top: 5%;
+}
+
