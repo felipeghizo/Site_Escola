@@ -29,59 +29,67 @@
         function GoBig(a){
            
             var maternal = window.document.getElementById("info-maternal")
+            var titmatenal = window.document.querySelector("div#info-maternal>h2")
             var pmaternal = window.document.getElementById("info2-mat")    
 
             var fundamental = window.document.getElementById("info-fundamental")
+            var titfundamental = window.document.querySelector("div#info-fundamental>h2")
             var pfunamental = window.document.getElementById("info2-fund")
             
 
             var medio = window.document.getElementById("info-medio")
+            var titmedio = window.document.querySelector("div#info-medio>h2")
             var pmedio = window.document.getElementById("info2-med")
         
-            var infos = [["info-maternal", maternal, pmaternal], ["info-fundamental", fundamental, pfunamental], ["info-medio", medio, pmedio]]
-        
+            var infos = [["info-maternal", maternal, titmatenal, pmaternal], 
+                         ["info-fundamental", fundamental, titfundamental, pfunamental], 
+                         ["info-medio", medio, titmedio, pmedio]
+                        ]
 
             for(var i = 0; i != infos.length; i ++){
                
                 if (infos[i][0] == a){
                     infos[i][1].style.width = '50%'
                     infos[i][1].style.height = '50%'
-                    infos[i][2].style.opacity = 1
+                    infos[i][3].style.opacity = 1
+                    
                 } else {
                     infos[i][1].style.width = '3%'
                     infos[i][1].style.height = '2%'
-                    infos[i][1].style.fontsize = '10px'
+                    infos[i][2].style.fontSize = '10px'
                     infos[i][1].style.opacity = 0.7
-                }
-                           
+                }                         
 		    }
         }
 
-        function GoLow(b){
+        function GoLow(){
 
             var maternal = window.document.getElementById("info-maternal")
+            var titmatenal = window.document.querySelector("div#info-maternal>h2")
             var pmaternal = window.document.getElementById("info2-mat")    
 
             var fundamental = window.document.getElementById("info-fundamental")
+            var titfundamental = window.document.querySelector("div#info-fundamental>h2")
             var pfunamental = window.document.getElementById("info2-fund")
             
 
             var medio = window.document.getElementById("info-medio")
+            var titmedio = window.document.querySelector("div#info-medio>h2")
             var pmedio = window.document.getElementById("info2-med")
         
-            var infos = [["info-maternal", maternal, pmaternal], ["info-fundamental", fundamental, pfunamental], ["info-medio", medio, pmedio]]
+            var infos = [["info-maternal", maternal, titmatenal, pmaternal], 
+                         ["info-fundamental", fundamental, titfundamental, pfunamental], 
+                         ["info-medio", medio, titmedio, pmedio]
+                        ]
         
-
-            for(var i = 0; i != infos.length; i ++){
-                
+            for(var i = 0; i != infos.length; i ++){            
                 infos[i][1].style.width = '250px'
                 infos[i][1].style.height = '40px'
                 infos[i][1].style.marginLeft = '7%'
                 infos[i][1].style.marginRight = '7%'
+                infos[i][2].style.fontSize = '24px'
                 infos[i][1].style.opacity = 1
-                infos[i][2].style.opacity = 0
-                
-                           
+                infos[i][3].style.opacity = 0                           
 		    }
         }
     </script>
@@ -90,8 +98,8 @@
 <body>
     <div id="menu">
         <div id="options">
-            <input type="button" id="button-menu1" value="Aluno">
-            <input type="button" id="button-menu2" value="Professor">
+            <input type="button" id="button-menu1" value="Alunos">
+            <input type="button" id="button-menu2" value="Professores">
             <h1 id="NAME">ZOOTOPIA</h1>
             <input type="button" id="button-menu3" value="Novidades">
             <input type="button" id="button-menu4" value="Matricule-se">
@@ -99,7 +107,7 @@
     </div>
     <div id="fundo"></div>
     <div id="info">
-        <div id="info-maternal" onmouseenter="GoBig('info-maternal')" onmouseleave="GoLow('info-maternal')">
+        <div id="info-maternal" onmouseenter="GoBig('info-maternal')" onmouseleave="GoLow()">
             <h2>Maternal</h2>
             <p id="info2-mat">Lorem Ipsum é simplesmente uma simulação de texto da 
                 indústria tipográfica e de impressos, e vem sendo 
@@ -107,7 +115,7 @@
                 desconhecido pegou uma bandeja de tipos e os embaralhou 
                 para fazer um livro de modelos de tipos.</p>
         </div>
-        <div id="info-fundamental" onmouseenter="GoBig('info-fundamental')" onmouseleave="GoLow('info-fundamental')">
+        <div id="info-fundamental" onmouseenter="GoBig('info-fundamental')" onmouseleave="GoLow()">
             <h2>Fundamental 1 e 2</h2>
             <p id="info2-fund">Lorem Ipsum é simplesmente uma simulação de texto da 
             indústria tipográfica e de impressos, e vem sendo 
@@ -115,14 +123,21 @@
             desconhecido pegou uma bandeja de tipos e os embaralhou 
             para fazer um livro de modelos de tipos.</p>
         </div>
-        <div id="info-medio" onmouseenter="GoBig('info-medio')" onmouseleave="GoLow('info-medio')">
+        <div id="info-medio" onmouseenter="GoBig('info-medio')" onmouseleave="GoLow()">
             <h2>Médio</h2>
             <p id="info2-med">Lorem Ipsum é simplesmente uma simulação de texto da 
                 indústria tipográfica e de impressos, e vem sendo 
                 utilizado desde o século XVI, quando um impressor 
                 desconhecido pegou uma bandeja de tipos e os embaralhou 
                 para fazer um livro de modelos de tipos.</p>
-        </div>
+        </div>  
     </div>
+    <footer>
+        <div id="footer-info">
+            <h4>Cidade - Rua - Número</h4> 
+            <img alt="Whatsapp logo" src="images/wpp.png"/>
+            <p>(48) 99999-9999</p>
+        </div>
+    </footer> 
 </body>
 </html>

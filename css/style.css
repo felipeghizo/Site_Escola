@@ -6,7 +6,7 @@
 
 html, body{
     width: 100%;
-    height: 200%;
+    height: 100%;
   
     color: white;
 }
@@ -63,8 +63,8 @@ h1#NAME{
 /* info */
 div#info{
     color: rgb(0, 0, 0);
-    margin-top: 200px;
-    position: absolute;
+    margin-top: 20%;
+    position: relative;
     height: 100%;
     width: 100%;
 
@@ -83,77 +83,70 @@ div#info>div{
     text-align: center;
 }
 
-
 /* info maternal */
 div#info-maternal{
     float: left;
     margin-right: 10%;
     transition: width 1s, height 2s;
 }
+div#info-maternal>h2{
+    transition: font-size 5s;
+}
 div#info-maternal>p{
     opacity: 0;
     transition: opacity 2s;
 }
 
+/* info fundamental */
 div#info-fundamental{
     float: left;
     margin-right: 10%;    
     transition: width 1s, height 2s;
+}
+div#info-fundamental>h2{
+    transition: font-size 5s;
 }
 div#info-fundamental>p{
     opacity: 0;
     transition: opacity 2s;
 }
 
+/* info medio */
 div#info-medio{
     float: left;
     margin-right: 10%;
     transition: width 1s, height 2s;
+}
+div#info-medio>h2{
+    transition: font-size 5s;
 }
 div#info-medio>p{
     opacity: 0;
     transition: opacity 2s;
 }
 
-
-/* Caixa de logging */
-div#logging{
-    background-color: rgb(119, 119, 238);
-    width: 40%;
-    height: 30%;
-
-    color: black;
-
-    border: 8px solid black;
-    border-radius: 10px;
-
-    position: absolute;
-}
-div#logging>p{
-    color: rgb(255, 255, 255);
+/* footer */
+footer{
+    background-color: black;
+    width: 100%;
+    height: 100px;
+    position: relative;
+    bottom: 0px;
     text-align: center;
 }
-div#logging-info{
-    padding: 20px;
-    background-color: white;
 
-    border-top: 2px solid black;
-  
+div#footer-info{
+    padding-top: 2%;
 }
-input#info-box1, input#info-box2{
-    width: 100px;
-    text-align: left;
+#footer-info>img{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-left: 45%;
+    
+}
+#footer-info>p{
     float: right;
-}
-input#info-box2{
-    margin-top: -13px;
-}
-input#button-logging{
-    background-color: rgb(119, 119, 238);
-    border-radius: 30px;
-    font-weight: bold;
+    margin-right: 45%;
     
-    
-    margin-top: 5%;
 }
-
