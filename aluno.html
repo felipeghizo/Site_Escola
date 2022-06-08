@@ -4,18 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/style.css" type="text/css" rel="stylesheet"/> 	
-    <title>ESCOLA</title>
+    <link href="css/style_aluno.css" type="text/css" rel="stylesheet"/>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"> 
+    <title>ZOOTOPIA</title>	
+    <style type="text/css">
+        /* Fundo */
+        div#fundo{
+            background-image: url("images/aluno.jfif");
+            background-repeat: no-repeat;
+          
+            position: fixed;
+            z-index: 0;
+            top: 100px;
+
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            
+        }
+    </style>
 </head>
 <body>
     <div id="menu">
         <div id="options">
-            <input type="button" id="button-menu1">
-            <input type="button" id="button-menu1">
-            <input type="button" id="button-menu2">
-            <input type="button" id="button-menu2">
+            <a href="https:/felipeghizo.github.io/Site_Escola/index.html"><input type="button" id="button-menu1" value="Escola"></a>
+            <a href="https:/felipeghizo.github.io/Site_Escola/Professores.html"><input type="button" id="button-menu2" value="Professores"></a>
+            <h1 id="NAME">ZOOTOPIA</h1>
+            <a href="https:/felipeghizo.github.io/Site_Escola/Novidades.html"><input type="button" id="button-menu3" value="Novidades"></a>
+            <a href="https:/felipeghizo.github.io/Site_Escola/Matricule.html"><input type="button" id="button-menu4" value="Matricule-se"></a>
         </div>
     </div>
+    <div id="fundo"></div>
     <div id="logging">
         <p>ESCOLA</p>
         <div id="logging-info">

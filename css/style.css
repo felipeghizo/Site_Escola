@@ -174,7 +174,7 @@ div#footer-info{
 }
 
 /* Celular */
-@media screen and (max-width: 400px){   
+@media screen and (max-width: 500px){   
 
     /* Menu */
     div#menu{
@@ -193,24 +193,25 @@ div#footer-info{
     input#button-menu1{
         margin: 0px;
         float: left;
+        margin-left: 40px;
     }
     input#button-menu2{
         margin: 0px;
         float: left;
         margin-top: 28px;
-        margin-left: -69px;
+        margin-left: -50px;
     }
     input#button-menu3{
         margin: 0px;    
         float: left;
         margin-top: 54px;
-        margin-left: -110px;
+        margin-left: -98px;
     }
     input#button-menu4{
         margin: 0px;
         float: left;
         margin-top: 80px;
-        margin-left: -110px;
+        margin-left: -98px;
     }
 
     /* info */
