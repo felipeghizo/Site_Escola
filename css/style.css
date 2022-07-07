@@ -68,7 +68,7 @@ div#info{
     position: relative;
     height: 100%;
     width: 100%;
-
+    text-align: center;
 }
 div#info>div{
     height: 40px;
@@ -79,8 +79,10 @@ div#info>div{
     
     background-color: rgba(68, 68, 68, 0.6);   
     color: white;
-    
-    text-align: center;
+}
+
+div#info p{
+    text-align: justify;
 }
 
 /* info maternal */
