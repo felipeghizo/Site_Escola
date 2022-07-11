@@ -7,25 +7,6 @@
     <link href="css/style.css" type="text/css" rel="stylesheet"/>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"> 	
     <title>ZOOTOPIA</title>
-    <style type="text/css">
-        /* Fundo */
-        div#fundo{
-            background-image: url("images/escola.png");
-            background-repeat: no-repeat;
-          
-            position: fixed;
-            z-index: 0;
-            top: 100px;
-
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            width: 100%;
-            height: 100%;
-            
-        }
-    </style>
     <script>
  
         function GoBig(a){
@@ -53,13 +34,15 @@
                 if (infos[i][0] == a){
                     infos[i][1].style.width = '50%'
                     infos[i][1].style.height = '50%'
+                    infos[i][3].style.visibility = 'visible'
                     infos[i][3].style.opacity = 1
                     
                 } else {
-                    infos[i][1].style.width = '3%'
+                    infos[i][1].style.width = '2%'
                     infos[i][1].style.height = '2%'
-                    infos[i][2].style.fontSize = '10px'
+                    infos[i][1].style.padding = '25px'
                     infos[i][1].style.opacity = 0.7
+                    infos[i][2].outerHTML = '<h2>...</h2>'
                 }                         
 		    }
         }
@@ -72,45 +55,57 @@
 
             var fundamental = window.document.getElementById("info-fundamental")
             var titfundamental = window.document.querySelector("div#info-fundamental>h2")
+            var titfundamentalval = window.document.getElementById("Fundamental 1 e 2")
             var pfunamental = window.document.getElementById("info2-fund")
             
 
             var medio = window.document.getElementById("info-medio")
             var titmedio = window.document.querySelector("div#info-medio>h2")
+            var titmedioval = window.document.getElementById("Médio")
             var pmedio = window.document.getElementById("info2-med")
-        
-            var infos = [["info-maternal", maternal, titmatenal, pmaternal], 
-                         ["info-fundamental", fundamental, titfundamental, pfunamental], 
-                         ["info-medio", medio, titmedio, pmedio]
+
+
+            var infos = [["info-maternal", maternal, titmatenal, pmaternal, "Maternal"], 
+                         ["info-fundamental", fundamental, titfundamental, pfunamental, "Fundamental 1 e 2"], 
+                         ["info-medio", medio, titmedio, pmedio, "Médio"]
                         ]
         
             for(var i = 0; i != infos.length; i ++){            
                 infos[i][1].style.width = '250px'
                 infos[i][1].style.height = '40px'
-                infos[i][1].style.marginLeft = '7%'
-                infos[i][1].style.marginRight = '7%'
+                infos[i][1].style.marginLeft = '11%'
                 infos[i][2].style.fontSize = '24px'
+                infos[i][1].style.padding = '10px'
                 infos[i][1].style.opacity = 1
-                infos[i][3].style.opacity = 0                           
+                infos[i][3].style.opacity = 0
+                infos[i][3].style.visibility = 'hidden'
+                infos[i][2].outerHTML = '<h2>' + infos[i][4] + '</h2>'                       
 		    }
         }
     </script>
 </head>
 <body>
     <div id="menu">
+        <h1 id="NAME">ZOOTOPIA</h1>
         <div id="options">
             <a href="./aluno.html" rel="next"><input type="button" id="button-menu1" value="Alunos"></a>
             <a href="./Professores.html" rel="next"><input type="button" id="button-menu2" value="Professores"></a>
-            <h1 id="NAME">ZOOTOPIA</h1>
             <a href="./Novidades.html" rel="next"><input type="button" id="button-menu3" value="Novidades"></a>
             <a href="./Matricule.html" rel="next"><input type="button" id="button-menu4" value="Matricule-se"></a>
         </div>
     </div>
-    <div id="fundo"></div>
     <div id="info">
         <div id="info-maternal" onmouseenter="GoBig('info-maternal')" onmouseleave="GoLow()">
             <h2>Maternal</h2>
             <p id="info2-mat">Lorem Ipsum é simplesmente uma simulação de texto da 
+                indústria tipográfica e de impressos, e vem sendo 
+                utilizado desde o século XVI, quando um impressor 
+                desconhecido pegou uma bandeja de tipos e os embaralhou 
+                para fazer um livro de modelos de tipos. Lorem Ipsum é simplesmente uma simulação de texto da 
+                indústria tipográfica e de impressos, e vem sendo 
+                utilizado desde o século XVI, quando um impressor 
+                desconhecido pegou uma bandeja de tipos e os embaralhou 
+                para fazer um livro de modelos de tipos. Lorem Ipsum é simplesmente uma simulação de texto da 
                 indústria tipográfica e de impressos, e vem sendo 
                 utilizado desde o século XVI, quando um impressor 
                 desconhecido pegou uma bandeja de tipos e os embaralhou 
@@ -122,11 +117,29 @@
             indústria tipográfica e de impressos, e vem sendo 
             utilizado desde o século XVI, quando um impressor 
             desconhecido pegou uma bandeja de tipos e os embaralhou 
+            para fazer um livro de modelos de tipos. Lorem Ipsum é simplesmente uma simulação de texto da 
+            indústria tipográfica e de impressos, e vem sendo 
+            utilizado desde o século XVI, quando um impressor 
+            desconhecido pegou uma bandeja de tipos e os embaralhou 
+            para fazer um livro de modelos de tipos. Lorem Ipsum é simplesmente uma simulação de texto da 
+            indústria tipográfica e de impressos, e vem sendo 
+            utilizado desde o século XVI, quando um impressor 
+            desconhecido pegou uma bandeja de tipos e os embaralhou 
             para fazer um livro de modelos de tipos.</p>
         </div>
         <div id="info-medio" onmouseenter="GoBig('info-medio')" onmouseleave="GoLow()">
             <h2>Médio</h2>
             <p id="info2-med">Lorem Ipsum é simplesmente uma simulação de texto da 
+                indústria tipográfica e de impressos, e vem sendo 
+                utilizado desde o século XVI, quando um impressor 
+                desconhecido pegou uma bandeja de tipos e os embaralhou 
+                para fazer um livro de modelos de tipos. 
+                
+                Lorem Ipsum é simplesmente uma simulação de texto da 
+                indústria tipográfica e de impressos, e vem sendo 
+                utilizado desde o século XVI, quando um impressor 
+                desconhecido pegou uma bandeja de tipos e os embaralhou 
+                para fazer um livro de modelos de tipos. Lorem Ipsum é simplesmente uma simulação de texto da 
                 indústria tipográfica e de impressos, e vem sendo 
                 utilizado desde o século XVI, quando um impressor 
                 desconhecido pegou uma bandeja de tipos e os embaralhou 

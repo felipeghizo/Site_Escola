@@ -11,10 +11,9 @@ html, body{
     color: white;
 }
 
-
 /*Menu*/
 div#menu{
-    background-color: black;
+    background-color: rgb(14, 13, 13);
     width: 100%;
     height: 100px;
     position: fixed;
@@ -22,77 +21,68 @@ div#menu{
     z-index: 1;
 }
 
-#button-menu1, #button-menu2, #button-menu3, #button-menu4{
-    background-color: black;
-
-    border-color: rgb(131, 128, 128);
-    border-width: 1px;
-
+div#options input{
+    background-color: rgb(41, 41, 41);
+    padding: 2px;
     color: rgb(190, 188, 188);
     font-size: 18px;
-
+    border-radius: 5px;
     cursor: pointer;
+    display: inline-block;
+    margin: 5% 0% 0% 1%;
+}
 
-    margin-top: 2%;
+div#options input:hover{
+    background-color: rgb(73, 73, 73);
 }
-#button-menu1:hover, #button-menu2:hover, #button-menu3:hover, #button-menu4:hover{
-    background-color: rgb(51, 51, 51);
 
-}
-input#button-menu1{
-    margin-left: 5%;
-    margin-right: 15%;
-}
-input#button-menu2{
-    margin-right: 15%;
-}
-input#button-menu3, input#button-menu4{
-    float: right;
-}
-input#button-menu3{
-    margin-right: 5%;
-}
-input#button-menu4{
-    margin-right: 15%;
-}
 h1#NAME{
     position: absolute;
-    margin-left: 42%;
-    margin-top: -2%;
+    margin: 2% 45%;
 }
 
 /* info */
 div#info{
     color: rgb(0, 0, 0);
-    margin-top: 20%;
+    margin-top: 100px;
     position: relative;
     height: 100%;
-    width: 100%;
+
     text-align: center;
+
+    background-image: url("../images/escola.png");
+    background-repeat: no-repeat;    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 div#info>div{
     height: 40px;
     width: 250px;
     
-    margin-left: 7%;
+    margin-top: 5%;
+    margin-left: 11%;
     padding: 10px;
     
     background-color: rgba(68, 68, 68, 0.6);   
     color: white;
+
+    border-radius: 5px;
 }
 
 div#info p{
     text-align: justify;
+    visibility: hidden;
 }
 
 /* info maternal */
 div#info-maternal{
     float: left;
-    margin-right: 10%;
     transition: width 1s, height 2s;
 }
 div#info-maternal>h2{
-    transition: font-size 5s;
+    transition: font-size 2s;
 }
 div#info-maternal>p{
     opacity: 0;
@@ -101,12 +91,11 @@ div#info-maternal>p{
 
 /* info fundamental */
 div#info-fundamental{
-    float: left;
-    margin-right: 10%;    
+    float: left;  
     transition: width 1s, height 2s;
 }
 div#info-fundamental>h2{
-    transition: font-size 5s;
+    transition: font-size 2s;
 }
 div#info-fundamental>p{
     opacity: 0;
@@ -116,11 +105,10 @@ div#info-fundamental>p{
 /* info medio */
 div#info-medio{
     float: left;
-    margin-right: 10%;
     transition: width 1s, height 2s;
 }
 div#info-medio>h2{
-    transition: font-size 5s;
+    transition: font-size 2s;
 }
 div#info-medio>p{
     opacity: 0;
