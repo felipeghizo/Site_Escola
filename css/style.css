@@ -41,29 +41,26 @@ h1#NAME{
     margin: 2% 45%;
 }
 
-div#imagem_fundo{
-
-    background-image: url("../images/escola.png");
-    background-position: bottom center;
-    background-repeat: no-repeat;    
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    position: fixed;
-    height: 100%;
-    width: 100%;
-
-}
 
 /* info */
 div#info{
     color: rgb(0, 0, 0);
     margin-top: 100px;
     position: relative;
-    height: 100%;
+    height: 500px;
 
     text-align: center;
+
+    background-image: url("../images/escola.png");
+    background-position: bottom;
+    background-repeat: no-repeat;   
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    background-attachment:fixed;	
 }
 div#info>div{
     height: 40px;
@@ -131,7 +128,7 @@ div.crianca{
     width: 100%;
     height: 608px;
     position: relative;
-    top: -200px;
+
 }
 
 
@@ -185,7 +182,22 @@ div.info_crianca_esq{
 }
 
 
+div.bla{
+    width: 100%;
+    height: 600px;
+    position: relative;
 
+    background-image: url("../images/escola2.png");
+    background-position: center;
+    background-repeat: no-repeat;   
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    background-attachment:fixed;	
+}
 
 /* footer */
 footer{
@@ -195,6 +207,7 @@ footer{
     position: relative;
     bottom: 0px;
     text-align: center;
+   
 }
 
 div#footer-info{
