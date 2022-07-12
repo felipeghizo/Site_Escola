@@ -26,12 +26,12 @@ div#content{
     box-shadow: 1px 1px 5px #494949;
 
     background-image: url("../images/aluno.png");
+    background-position: center center;
     background-repeat: no-repeat;    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
 }
 
 /*Menu*/
